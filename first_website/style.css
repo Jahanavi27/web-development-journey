@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+/* NAVBAR */
+
+nav {
+    width: 100%;
+    padding: 20px 40px;
+    background-color: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav h2 {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: lightblue;
+}
+
+/* MAIN CARD */
+
+.container {
+    width: 700px;
+    margin: 140px auto 50px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+}
+
+h1 {
+    color: darkblue;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+p {
+    color: green;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+input {
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid gray;
+    margin-bottom: 20px;
+}
+
+/* BUTTONS */
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: darkblue;
+    transform: scale(1.05);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* ABOUT SECTION */
+
+.about {
+    width: 700px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+}
+
+.about h2 {
+    color: darkblue;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.about p {
+    font-size: 20px;
+}
+
+/* DARK MODE */
+
+.dark {
+    background-color: #1e1e1e;
+}
+
+.dark .container,
+.dark .about {
+    background-color: #333;
+    color: white;
+}
+
+.dark p {
+    color: lightgreen;
+}
+
+.dark .skills {
+
+    background: #333;
+
+    color: white;
+
+}
+
+.dark .contact {
+
+    background: #333;
+
+    color: white;
+
+}
+
+.skills {
+
+    width: 700px;
+
+    margin: 40px auto;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+
+}
+
+.skills h2 {
+
+    color: darkblue;
+
+    margin-bottom: 25px;
+
+}
+
+.skill-list {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+}
+
+.skill {
+
+    background: blue;
+
+    color: white;
+
+    padding: 15px 25px;
+
+    border-radius: 10px;
+
+}
+
+.contact {
+
+    width: 700px;
+
+    margin: 40px auto;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+
+}
+
+.contact h2 {
+
+    color: darkblue;
+
+    margin-bottom: 20px;
+
+}
+
+.contact p {
+
+    margin: 10px 0;
+
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    .container,
+    .about {
+        width: 90%;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+}
